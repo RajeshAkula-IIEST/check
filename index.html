@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grade Lookup</title>
+</head>
+
+<body>
+
+  <h2>Check Your Grade</h2>
+
+  <label>Student ID:</label><br>
+  <input type="text" id="sid"><br><br>
+
+  <label>Date of Birth:</label><br>
+  <input type="date" id="dob"><br><br>
+
+  <button onclick="getGrade()">Submit</button>
+
+  <p id="result"></p>
+
+  <script>
+    function getGrade() {
+      document.getElementById("result").innerText =
+        "Button submitted successfully";
+    }
+  </script>
+
+</body>
+</html>
